@@ -15,3 +15,29 @@
 
 ## rgwa-acception-script
 Скрипт для получения дат и сообщений в тикеты и yougile после приемки проекта со стороны РГВА.
+
+
+# Onboarding по доступам Github
+## Начало работы с проектом
+### Получение репо проекта
+
+Вводим команду из `<>code`-`local`-`GitHub CLI`. Она будет иметь примерно следующий вид:
+```
+gh repo clone wa-name-dev/repo-name
+```
+
+В качестве пароля используем токен отсюда https://github.com/settings/tokens.
+Он должен иметь доступы:
+```
+✅ ALL repo
+✅ workflow
+✅ read:org
+```
+### Установка библиотек (относится только к node-проектам)
+1. `rm -rf node_modules` - полностью удаляем папку node_modules, чтобы не было битых, конфликтующих версий пакетов, чистим старые зависимости
+2. `rm -f package-lock.json` - удаляем файл `package-lock.json`. Там записаные точные версии всех зависимостей, его удаление и пересоздании поможет избежать конфликтов версий
+3. `npm install` -  устанавливает все зависимости проекта заново. Читает файл `package.json`. Скачивает все указанные зависимости из `npm registry`. Создает новую папку `node_modules`. Генерирует `новый package-lock.json`
+
+
+
+приватный ssl ключ https://drive.google.com/file/d/1Xvn5kCtCAZ7vp6edq7PgQohmDaCjEOXU/view?usp=drive_link
