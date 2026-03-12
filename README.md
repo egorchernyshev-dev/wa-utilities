@@ -16,6 +16,8 @@
 ## rgwa-acception-script
 Скрипт для получения дат и сообщений в тикеты и yougile после приемки проекта со стороны РГВА.
 
+## ticket-communication-project-parser
+Скрипт для выгрузки даты-тикета-проекта из инструмента [Контроль коммуникаций](https://lk.intelsib.ru/tools/admin/control-communications) для [мониторинга закрытости тикетов](https://docs.google.com/spreadsheets/d/1Df8RxLXpBmG5D3p78PEGFilgpyV70gGP0cRVUe64S7o/edit?gid=0#gid=0) 
 
 # Onboarding по доступам Github
 ## Начало работы с проектом
