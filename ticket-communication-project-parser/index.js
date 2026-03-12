@@ -4,7 +4,7 @@
     // Сбор данных из исходной таблицы
     $('.table.table-striped.table-bordered tr').each(function() {
         var $link = $(this).find('td a').first();
-        var url = $link.attr('href') ? 'https://lk.intelsib.ru/' + $link.attr('href') : '';
+        var url = $link.attr('href') ? 'https://lk.intelsib.ru' + $link.attr('href') : '';
         var linkText = $link.text() || '';
         var otherText = $(this).find('td:not(:has(a))').text() || '';
         if (url) { // обрабатываем только строки со ссылкой
